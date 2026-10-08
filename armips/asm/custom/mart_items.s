@@ -65,6 +65,15 @@ EIGHT_BADGES equ 6
 .halfword ITEM_MEGA_RING
 .halfword FIVE_BADGES
 
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+.halfword 0x0000
+
 /** Special Mart Index - This is not in byte order
 const u16 *_0210FA3C[] = {
     _020FBA54, 0
