@@ -11,6 +11,15 @@ void Repel_SetCurrentType();
 u16 ALIGN4 CurrentRepelType = 0;
 
 bool32 PlayerStepEvent_RepelCounterDecrement(SaveData *saveData, FieldSystem *fieldSystem) {
+    struct SAVE_MISC_DATA *saveMiscData = Sav2_Misc_get(saveData);
+    if (saveMiscData != NULL) {
+        for (int i = 0; i < MAX_BERRY_POT; i++) {
+            if (saveMiscData->berry_pots[i].berryId != 0 && saveMiscData->berry_pots[i].mulch == 0) {
+                saveMiscData->berry_pots[i].mulch = 2; // Auto-apply Damp Mulch (ITEM_DAMP_MULCH)
+            }
+        }
+    }
+
     void *roamerSaveData = EncDataSave_GetSaveDataPtr(saveData);
     u8* repel_addr = SaveData_GetRepelPtr(roamerSaveData);
 

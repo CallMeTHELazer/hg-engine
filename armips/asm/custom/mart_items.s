@@ -41,23 +41,14 @@ EIGHT_BADGES equ 6
 .halfword ITEM_FULL_RESTORE
 .halfword EIGHT_BADGES
 
-.halfword ITEM_RARE_CANDY
+.halfword ITEM_ANTIDOTE
 .halfword ZERO_BADGES
 
-.halfword ITEM_MAX_ETHER
-.halfword THREE_BADGES
+.halfword ITEM_PARALYZE_HEAL
+.halfword ZERO_BADGES
 
-.halfword ITEM_ELIXIR
-.halfword FIVE_BADGES
-
-.halfword ITEM_MAX_ELIXIR
-.halfword SEVEN_BADGES
-
-.halfword ITEM_HEART_SCALE
-.halfword SEVEN_BADGES
-
-.halfword ITEM_MAX_REVIVE
-.halfword EIGHT_BADGES
+.halfword ITEM_AWAKENING
+.halfword ZERO_BADGES
 
 .halfword ITEM_FULL_HEAL
 .halfword ZERO_BADGES

@@ -12716,16 +12716,16 @@ movedata MOVE_STRANGE_STEAM, "Strange Steam"
     movedescription MOVE_STRANGE_STEAM, "The user attacks the\ntarget by emitting\nsteam.\nThis may also\nconfuse the target."
 
 movedata MOVE_LIFE_DEW, "Life Dew"
-    battleeffect MOVE_EFFECT_HIT
+    battleeffect MOVE_EFFECT_RESTORE_HALF_HP
     pss SPLIT_STATUS
     basepower 0
     type TYPE_WATER
     accuracy 0
     pp 10
     effectchance 0
-    target RANGE_USER_SIDE
+    target RANGE_USER
     priority 0
-    flags FLAG_MIRROR_MOVE | FLAG_PROTECT | FLAG_MAGIC_COAT
+    flags FLAG_KEEP_HP_BAR | FLAG_SNATCH
     appeal 0x00
     contesttype CONTEST_COOL
     terminatedata
